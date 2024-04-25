@@ -1,19 +1,18 @@
 body{
-    background-color: red;
     margin: 0;
     font-family: "Poppins", sans-serif;
 }
 
-header{
+.conteiner{
     width: 100vw;
     height: 100vh;
-    background-color: #191919;
+    background-image: url(assets/fundo-preto-abstrato_1393-348.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(75deg, rgba(28, 74, 107, 0.2),rgba(28, 74, 107, 0.1), rgba(78, 72, 15, 0.1), rgba(78, 72, 15, 0.2)); /* Gradiente linear para a sombra */
- 
+    
 }
+
 
 
 .cardId{
@@ -27,6 +26,9 @@ header{
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s;
+    margin: 0 3vw 17vh 0 ;
+    background-image: linear-gradient(90deg, rgba(28, 74, 107, 0.9),rgba(28, 74, 107, 0.6), rgba(28, 74, 107, 0.3), rgba(78, 74, 107, 0.6));
+
     
 }
 
@@ -130,10 +132,41 @@ i{
 
 button{
     border: none;
-    background-color: #212121;
+    background-color: transparent;
     color: #fff;
 }
 
 .text2{
     text-align: center;
+}
+
+main{
+    width: 70vw;
+    height: 80vh;
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+    background-image: linear-gradient(90deg, rgba(78, 74, 107, 0.9),rgba(78, 74, 107, 0.6), rgba(78, 74, 107, 0.3), rgba(28, 74, 107, 0.3));
+
+}
+
+
+td{
+    border: 2px solid black !important;
+    padding: 10px !important;
+}
+
+.title{
+    width: 20%;
+}
+
+.descricao{
+    width: 50%;
+}
+
+.send{
+    text-align: center;
+    width: 20%;
+    text-decoration: none;
+    color: #fff;
 }
