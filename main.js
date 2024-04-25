@@ -19,5 +19,21 @@ const getGitHubProfileInfos = () => {
 
 getGitHubProfileInfos();
 
+document.addEventListener('DOMContentLoaded', function() {
+    var card = document.getElementById('card');
+    var botao = document.getElementById('botao');
+    var botaoVoltar = document.getElementById('botaoVoltar');
+
+    botao.addEventListener('click', function() {
+        card.classList.add('virada');
+    });
+
+    botaoVoltar.addEventListener('click', function() {
+        card.classList.remove('virada');
+    });
+});
+
+
+
 
 
