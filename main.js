@@ -33,7 +33,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+const form = document.getElementById("form");
+const guestName = document.getElementById("guest");
+const message = document.getElementById("message");
 
+form.addEventListener("submit", (Event)=>{
+    Event.preventDefault();
 
+    ChekGuestName()
+})
+
+function ChekGuestName(){
+    const guestValue = guestName.value;
+    console.log(guestValue);
+
+    if (guestValue == ""){
+}
 
 
